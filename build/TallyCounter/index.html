@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>DrinkPlenty</title>
+
+    <!-- Your own stylesheet (do not remove!)-->
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
+    </script>
+
+</head>
+<body>
+    <div id="front">
+        <div id="display">
+            
+            <div id="amount">
+            0
+            </div>
+
+            <div id="unit">
+                pints
+            </div>
+            
+        </div>
+        <div id="buttons">
+            <button id="reset-button" data-type="dizmo-button">Reset</button>
+        </div>
+    </div>
+    <div id="back">
+        
+            <div id="unit-select-wrapper">      
+                <select id="unit-select" data-type="dizmo-selectbox" >
+                    <option value="pints">Pint</option>
+                    <option value="liter">Liter</option>
+                    <option value="kilogram">Kilogram</option>   
+                    <option value="people">People</option>
+                    <option value="pounds">Pound</option>
+                    <option value="gallons">Gallon</option>
+                </select>
+            </div>
+
+            <div id="stepping-wraper">
+                <div id="slider-wrapper" >
+                    <div id="stepping-slider" data-type="dizmo-slider">
+                    </div>
+                </div>
+
+                <div>Increment by </div>
+                    <div id="stepping">0.5 </div>
+                <div>liters</div>
+            </div>
+
+
+        <div class="done-btn-wrapper">
+            
+            <button id="doneBtn" class="done-btn" data-type="dizmo-button">Done</button>
+        </div>
+    </div>
+    <!-- Your own JavaScript (do not remove!) -->
+    <script type="text/javascript" src="application.js"></script>
+</body>
+</html>
